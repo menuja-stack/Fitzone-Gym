@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+}
+/* Navbar */
+nav {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+}
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+nav .container .title {
+    font-weight: bold;
+    color: #4b5563;
+    font-size: 1.5rem;
+}
+nav .container .logout-btn {
+    background-color: #ef4444;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+nav .container .logout-btn:hover {
+    background-color: #dc2626;
+}
+/* Main Content */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+.dashboard-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+.dashboard-card h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+/* Profile & Feedback Sections */
+.profile-feedback {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+@media (min-width: 768px) {
+    .profile-feedback {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.profile-section, .feedback-section {
+    background-color: #dbeafe;
+    border-radius: 8px;
+    padding: 1rem;
+}
+.profile-section h3, .feedback-section h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.feedback-section form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 1rem;
+}
+.feedback-section form button {
+    background-color: #3b82f6;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.feedback-section form button:hover {
+    background-color: #2563eb;
+}
+/* Subscription Section */
+.subscription-section {
+    background-color: #dbeafe;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+.subscription-section h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.subscription-section p {
+    color: #4b5563;
+}
+.view-plans-btn {
+    display: inline-block;
+    background-color: #3b82f6;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.view-plans-btn:hover {
+    background-color: #2563eb;
+}
